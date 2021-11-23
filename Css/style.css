@@ -1,0 +1,270 @@
+:root{
+    --color-gray:#999;
+    --colo-black:#2e2e2e;
+    --color-pink:#ebb5ac;
+    --color-white:#ffffff;
+    --color-black-of:#474545;
+    
+    }
+    
+    body{
+        overflow-x: hidden;
+        font-family: 'Poppins', sans-serif;
+    }
+    
+    /* start navbar */
+    nav{
+       height: 50px;
+       font-family: 'Fredoka One', cursive;
+    }
+    @media (max-width:768px) {
+        nav ul.text li{
+            display: none;
+        }
+        nav li.nav-item.dropdown{
+            display: none;
+        }
+        
+    }
+    nav ul{
+        padding: 0;
+    }
+    nav ul li{
+    list-style: none;
+    color:var(--color-gray) !important ;
+    }
+    nav ul li a{
+        color:var(--color-gray) !important ;
+    }
+    
+    nav.nav-main{
+        height: 80px;
+        background: var(--color-white) !important;
+        font-family: 'Fredoka One', cursive;
+    }
+    nav.nav-main .navbar-brand{
+    font-size: 30px;
+    font-weight: bold;
+    color: var(--color-black-of);
+    font-family: 'Poppins', sans-serif;
+    }
+    nav.nav-main .navbar-brand:hover{
+        color: var(--color-pink);
+    }
+   
+    nav.nav-main ul li {
+        margin: 0 10px;
+    }
+    
+    nav ul li#showAdd{
+        display: none;
+    }
+    nav.nav-main ul li a{
+        color: var(--color-black) !important;
+    }
+    nav.nav-main ul li a:hover{
+        color: var(--color-pink) !important;
+    }
+    /* end navbar */
+    
+    /* start carousel */
+    
+    .carousel.slide .img1{
+    height: calc(100vh - 130px);
+    background-image: url('https://images.unsplash.com/photo-1445205170230-053b83016050?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1400&q=80');
+    
+    background-size: cover;
+    }
+    .carousel.slide .img2{
+    height: calc(100vh - 133px);
+    background-image: url('https://unsplash.com/photos/TT-ROxWj9nA/download?force=true');
+    background-size: cover;
+    
+    }
+    /* end carousel */
+    /* start latest collection */
+    .latest-collection{
+        margin: 100px 0 0 0;
+    }
+    .latest-collection button{
+        background: none;
+        color: var(--colo-black);
+        border: 2px solid var(--color-pink);
+        border-radius:20px ;
+        padding: 8px;
+        margin-left:10px ;
+        transition: 0.5s;
+    
+    }
+    .latest-collection button:hover{
+        background: var(--color-pink);
+    }
+    
+      .latest-collection img{
+          width: 100%;
+          height: 200px;
+          object-fit: cover;
+      }
+      .latest-collection .card{
+        padding-bottom: 12px;
+    }
+    .latest-collection .card .details-text{
+    padding: 10px;
+    
+    }
+    .latest-collection .card .details-text p{
+        color: var(--color-gray);
+        font-size: 15px;
+        
+    }
+    
+    .latest-collection .card .details-text strong{
+        color: var(--color-black-of);
+        font-size: 20px;
+        
+    }
+    .latest-collection .card button{
+        background:var(--color-pink) ;
+        border-radius: 5px !important;
+        transition: 0.5s;
+        margin: 5px;
+    }
+    .latest-collection .card a{
+        border:2px solid var(--color-pink) ;
+        background:var(--color-pink) ;
+        border-radius: 5px !important;
+        transition: 0.5s;
+        color: var(--color-black-of);
+        text-decoration: none !important;
+        height: 44px;
+        padding: 9px;
+        margin: 5px;
+        
+    }
+    .latest-collection .card button:hover,.latest-collection .card a:hover{
+        background: none !important;
+    }
+    
+    .latest-collection .card .details-text h4{
+        color: var(--colo-black);
+        font-size: 20px;
+        
+    }
+    .latest-collection .card .overlay{
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.308);
+        top: 0;
+        transition: .5s;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        visibility: hidden;
+        opacity: 0;
+    
+    }
+    .latest-collection .card .main:hover .overlay{
+        visibility: visible;
+        opacity: 1;
+    }
+    .latest-collection .card .overlay button{
+        border: none !important;
+        background: none !important ;
+        margin: auto !important;
+        
+    }
+    
+    .latest-collection .card .overlay i{
+     color: var(--color-pink);
+     font-size: 25px;
+     
+    
+    }
+    /* end latest collection */
+    
+    /* start service */
+    .service {
+        padding: 50px;
+    }
+    .service .card{
+        padding: 40px;
+    }
+    .service .card h4{
+        font-size: 25px;
+        color: var(--color-black-of);
+    }
+    .service .card i{
+        font-size: 30px;
+        color: var(--color-pink);
+    }
+    .service .card {
+    border: none;
+    }
+    .service .card p{
+        color: var(--color-gray);
+        padding: 10px;
+    }
+    
+    /* end service */
+    
+    /* start footer */
+    .footer{
+        background: #262626;
+        color: var(--color-gray);
+        
+    }
+    .footer .container{
+        padding: 50px 0 0 0;
+    }
+    .footer h4{
+        color: var(--color-white);
+    }
+    .footer ul {
+        list-style: none;
+        padding: 0;
+    }
+    .footer ul li{
+        margin: 10px 0;
+    }
+    .footer ul li i{
+        margin: 10px;
+        color: var(--color-pink);
+        font-size: 20px;
+    }
+    
+    .footer  input[type="text"]{
+        padding: 10px;
+        min-width: 200px;
+        padding: 10px 12px 10px;
+    
+        font-weight: 400;
+        font-size: 13px;
+        font-family: 'Poppins',sans-serif;
+        letter-spacing: 0.6px;
+        border: 0;
+        color: #222;
+        position: relative;
+    }
+    .footer input[type="submit"]{
+        position: absolute;
+      height: 39.2px;
+        border: 0;
+        font-size: 16px;
+        padding: 0 20px;
+        background: var(--color-pink);
+        color: var(--color-white);
+        border-radius: 0 5px 5px 0;
+    }
+    @media (min-width:768px) {
+        .footer  input[type="text"]{
+            min-width: 100px;
+            padding: 10px 10px 10px;
+        }
+        .footer input[type="submit"]{
+            padding: 0 5px ;
+            font-size: 12px;
+            font-weight: bold;
+        }
+    }
+    
+     /* end footer */

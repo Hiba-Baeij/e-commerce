@@ -1,0 +1,221 @@
+:root{
+    --color-gray:#999;
+    --colo-black:#2e2e2e;
+    --color-pink:#ebb5ac;
+    --color-white:#ffffff;
+    --color-black-of:#474545;
+    
+    }
+    
+    body{
+        overflow-x: hidden;
+        font-family: 'Poppins', sans-serif;
+    }
+    
+    /* start navbar */
+    nav{
+        height: 50px;
+        font-family: 'Fredoka One', cursive;
+     }
+     @media (max-width:768px) {
+         nav ul.text li{
+             display: none;
+         }
+         nav li.nav-item.dropdown{
+             display: none;
+         }
+         
+     }
+     nav ul{
+         padding: 0;
+     }
+     nav ul li{
+     list-style: none;
+     color:var(--color-gray) !important ;
+     }
+     nav ul li a{
+         color:var(--color-gray) !important ;
+     }
+     
+     nav.nav-main{
+         height: 80px;
+         background: var(--color-white) !important;
+         font-family: 'Fredoka One', cursive;
+     }
+     nav.nav-main .navbar-brand{
+     font-size: 30px;
+     font-weight: bold;
+     color: var(--color-black-of);
+     font-family: 'Poppins', sans-serif;
+     }
+     nav.nav-main .navbar-brand:hover{
+         color: var(--color-pink);
+     }
+    
+     nav.nav-main ul li {
+         margin: 0 10px;
+     }
+     
+     nav ul li#showAdd{
+         display: none;
+     }
+     nav.nav-main ul li a{
+         color: var(--color-black) !important;
+     }
+     nav.nav-main ul li a:hover{
+         color: var(--color-pink) !important;
+     }
+     /* end navbar */
+
+
+    /* start log in */
+ .home{
+    height: 60px;
+    
+}
+ .home a , .home i{
+    font-size: 20px;
+    color: var(--color-pink) !important;    
+    }
+ .home a:hover , .home i:hover{
+    color: var(--color-gray) !important;    
+
+}
+@media (max-width:768px) {
+    div.card.card-nav{
+        display: none;
+    }
+}
+@media (max-width:768px) {
+.form-group label{
+display: none;
+}
+.card{
+    border: none;
+}
+div.form-group{
+    padding: 0 !important;
+}
+}
+.log-in h4{
+    color: var(--color-black-of);
+   }
+.log-in input{
+    margin: 10px;
+}
+.log-in ul {
+    padding: 0;
+}
+.log-in ul li{
+    list-style: none;
+    color: var(--color-black-of);
+    margin: 10px;
+
+}
+.log-in ul li.background-color{
+background: var(--color-pink);
+color: var(--color-black-of) !important;
+margin: 0;
+padding: 10px;
+
+}
+.log-in ul li.background-color a{
+    color: var(--color-black-of) !important;
+    
+}
+.log-in .form-group{
+   padding: 30px 30px 0 30px;
+}
+.log-in input[type="password"]{
+    position: relative;
+}
+.log-in button.show{
+    position: absolute;
+    top: 0;
+    margin: 10px;
+    padding: 7px ;
+    background: var(--color-pink);
+    border: none;
+}
+.log-in button{
+    background: var(--color-pink);
+    border: none;
+    padding: 10px;
+}
+.log-in button:hover{
+    background: none;
+    border: 2px solid var(--color-pink);
+    transition: 0.4s;
+
+}
+.log-in a{
+    color: var(--color-black-of);
+    padding: 15px;
+}
+    
+/* end log in */
+
+/* start footer */
+.footer{
+    background: #262626;
+    color: var(--color-gray);
+    margin-top: 60px;
+
+    
+}
+.footer .container{
+    padding: 50px 0 0 0;
+}
+.footer h4{
+    color: var(--color-white);
+}
+.footer ul {
+    list-style: none;
+    padding: 0;
+}
+.footer ul li{
+    margin: 10px 0;
+}
+.footer ul li i{
+    margin: 10px;
+    color: var(--color-pink);
+    font-size: 20px;
+}
+
+.footer  input[type="text"]{
+    padding: 10px;
+    min-width: 200px;
+    padding: 10px 12px 10px;
+    font-weight: 400;
+    font-size: 13px;
+    font-family: 'Poppins',sans-serif;
+    letter-spacing: 0.6px;
+    border: 0;
+    color: #222;
+    position: relative;
+}
+.footer input[type="submit"]{
+    position: absolute;
+    height: 39.2px;
+    border: 0;
+    font-size: 16px;
+    padding: 0 20px;
+    background: var(--color-pink);
+    color: var(--color-white);
+    border-radius: 0 5px 5px 0;
+}
+@media (min-width:768px) {
+    .footer  input[type="text"]{
+        min-width: 100px;
+        padding: 10px 10px 10px;
+    }
+    .footer input[type="submit"]{
+        padding: 0 5px ;
+        font-size: 12px;
+        font-weight: bold;
+    }
+}
+footer ul.socail{
+
+}
+ /* end footer */

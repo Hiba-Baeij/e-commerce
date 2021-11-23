@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../libs/bootstrap-4.6.0-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../Css/style.css">
+    <link rel="stylesheet" href="../libs/fontawesome-free-5.15.4-web/css/all.css">
+    <title>store</title>
+</head>
+<body>
+   <!-- start navbar -->
+   <nav class=" navbar navbar-expand-lg navbar-light bg-dark d-flex justify-content-between align-items-center">
+    <ul class="d-flex justify-content-center align-items-center">
+        <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Currency:EUR
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="#">USD</a>
+              <a class="dropdown-item" href="#">EUR </a>
+            </div>
+        </li>
+        <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Language:English
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="#">English</a>
+              <a class="dropdown-item" href="#">Arabic </a>
+            </div>
+        </li>
+      
+        <li><a href="register.html" id="signUp">Register/</a></li>
+        <li><a href="#" id="logOut" style="display:none">LogOut</a></li>
+        <li><a href="logIn.html" id="logInNav">Login</a></li>
+      
+    </ul>
+    <ul class="text"><li>Free Shipping On Domestic Orders Over $150</li></ul>
+</nav>
+<nav class="nav-main navbar navbar-expand-lg navbar-light bg-light ">
+    <div class="container">
+    <a class="navbar-brand" href="index.html">Style Way</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+  
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <div class="w-100 d-flex justify-content-end align-items-center">
+      <ul class="navbar-nav m-0">
+        <li class="nav-item">
+            <a class="nav-link" href="#">More</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="#">Blog</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="#"> Shirts</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="#">shoes</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="#"> Dress</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="#">Fashion</a>
+        </li>
+        
+      </ul>
+      <ul class="form-inline my-2 my-lg-0">
+        <li ><a class="nav-link" href="cart.html"><i class="fas fa-shopping-cart m-2"></i>Cart</a></li>
+        <li ><a class="nav-link" href=""><i class="fas fa-search m-2"></i>Search</a></li>
+        <li  id="showAdd" ><a class="nav-link" href="productSet.html"><i class="fas fa-plus m-2"></i>Add</a></li>
+
+      </ul>
+    </div>
+    </div>
+    </div>
+  </nav>
+<!-- end navbar -->
+    <!-- start carousel -->
+    <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <div class="img1 d-block w-100" ></div>
+          </div>
+          <div class="carousel-item">
+            <div  class="img2 d-block w-100" ></div>
+          </div>
+        </div>
+        <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+        </a>
+      </div>
+    <!-- end carousel -->
+    <!-- start latest collection -->
+      <div class="latest-collection">
+        <div class="container">
+            <div class="title-last text-center">
+                <h2 >Latest Collection</h2>
+              
+                <div class="group-button m-5 d-flex justify-content-center align-items-center">
+                    <button class="btn">All</button>
+                    <button class="btn">clothes</button>
+                    <button class="btn">Accessories</button>
+                    <button class="btn">Bags</button>
+                    <button class="btn">shoes</button>
+          
+                </div>
+            </div>
+            <div class="row  " id="cardsRow" >
+                
+            </div>
+        </div>
+      </div>
+    <!-- end latest collection -->
+
+    
+    <!-- start service -->
+ 
+      <div class="service ">
+        <hr class="p-3">
+        <div class="row">
+            <div class="col-lg-4">
+                <div class="card   bounceInLeft " >
+                    <div class="d-flex justify-content-start">
+                        <i class="fab fa-telegram mx-2"></i>
+                        <h4>Worldwide Shipping</h4>
+                    </div>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ducimus pariatur quam impedit </p>
+                </div>
+            </div>
+            <div class="col-lg-4">
+                <div class="card  bounceInUp" >
+                    <div class="d-flex justify-content-start">
+                        <i class="fas fa-box mx-2"></i>
+                        <h4>Easy 30 Day Returns</h4>
+                    </div>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ducimus pariatur quam impedit </p>
+                </div>
+            </div>
+            <div class="col-lg-4">
+                <div class="card  bounceInRight" >
+                    <div class="d-flex justify-content-start">
+                        <i class="fas fa-wallet mx-2"></i>
+                        <h4>Money Back Guarentee</h4>
+                    </div>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ducimus pariatur quam impedit </p>
+                </div>
+            </div>
+        </div>
+      </div>
+    <!-- end service -->
+    <!-- start footer -->
+    <div class="footer  card  bounceInUp" >
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3">
+                    <h4>Store Information</h4>
+                    <ul>
+                        <li>
+                            
+                            <i class="fas fa-map-marker-alt"></i>
+                                <span>
+                                    Styleway - Fashion Store
+                                    <br>
+                                    507-Union Trade ipsum Doler Centre
+                                    <br>
+                                    France
+                                    <br>
+                                </span>    
+                            
+                        </li>
+                        <li><i class="fas fa-phone"></i>000-000-0000</li>
+                        <li><i class="fas fa-fax"></i>123456</li>
+                        <li><i class="fas fa-envelope"></i>sales@yourcompany.com </li>
+                    </ul>
+                </div>
+            
+                <div class="col-lg-3">
+                    <h4>Products</h4>
+                    <ul>
+                        <li>Price drop</li>
+                        <li>New products </li>
+                        <li>Best sales</li>
+                        <li>Contact Us</li>
+                        <li>Sitemap</li>
+                    </ul>
+                </div>
+                <div class="col-lg-3">
+                    <h4>Our Company</h4>
+                    <ul>
+                        <li>Price drop</li>
+                        <li>New products </li>
+          
+                        <li>Best sales</li>
+                        <li>Contact Us</li>
+                        <li>Sitemap</li>
+                    </ul>
+                </div>
+                <div class="col-lg-3">
+                    <h4>Our Newsletter!</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum soluta tenetur fugiat.</p>
+                    <input type="text" name="email" placeholder="Your email addresses" id="">
+                    <input type="submit" value="submit">
+
+                </div>
+            </div>  
+                <hr class="mt-5  bg-light">  
+                <div class="row">
+                    
+                    <div class="col-lg-6">
+                        <p>&copy; 2021 - Ecommerce software </p>
+                    </div>
+                    <div class="col-lg-6">
+                        <ul class="d-flex justify-content-end align-items-center">
+                            <li><i class="fab fa-facebook "></i></li>
+                            <li><i class="fab fa-instagram-square"></i></li>
+                            <li><i class="fab fa-google-plus"></i></li>
+                            <li><i class="fab fa-youtube "></i></li>
+                            <li><i class="fab fa-twitter-square "></i></li>
+                        </ul>
+                    </div>
+
+                </div>
+        </div>
+    </div>
+    <!-- end footer -->
+ 
+      <script src="../libs/bootstrap-4.6.0-dist/js/popper.js"></script>
+      <script src="../libs/bootstrap-4.6.0-dist/js/jquery.js"></script>
+    <script src="../libs/bootstrap-4.6.0-dist/js/bootstrap.min.js"> </script>
+    <script src="../javascript/app.js"></script>
+    <script src="../javascript/auth.js"></script>
+    
+              
+</body>
+</html>

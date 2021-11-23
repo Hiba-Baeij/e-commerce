@@ -1,0 +1,212 @@
+:root{
+    --color-gray:#999;
+    --colo-black:#2e2e2e;
+    --color-pink:#ebb5ac;
+    --color-white:#ffffff;
+    --color-black-of:#474545;
+    
+    }
+    
+    body{
+        overflow-x: hidden;
+        font-family: 'Poppins', sans-serif;
+    }
+    
+    /* start navbar */
+    nav{
+        height: 50px;
+        font-family: 'Fredoka One', cursive;
+     }
+     @media (max-width:768px) {
+         nav ul.text li{
+             display: none;
+         }
+         nav li.nav-item.dropdown{
+             display: none;
+         }
+         
+     }
+     nav ul{
+         padding: 0;
+     }
+     nav ul li{
+     list-style: none;
+     color:var(--color-gray) !important ;
+     }
+     nav ul li a{
+         color:var(--color-gray) !important ;
+     }
+     
+     nav.nav-main{
+         height: 80px;
+         background: var(--color-white) !important;
+         font-family: 'Fredoka One', cursive;
+     }
+     nav.nav-main .navbar-brand{
+     font-size: 30px;
+     font-weight: bold;
+     color: var(--color-black-of);
+     font-family: 'Poppins', sans-serif;
+     }
+     nav.nav-main .navbar-brand:hover{
+         color: var(--color-pink);
+     }
+    
+     nav.nav-main ul li {
+         margin: 0 10px;
+     }
+     
+     nav ul li#showAdd{
+         display: none;
+     }
+     nav.nav-main ul li a{
+         color: var(--color-black) !important;
+     }
+     nav.nav-main ul li a:hover{
+         color: var(--color-pink) !important;
+     }
+     /* end navbar */
+
+    /* start details */
+    .home{
+        height: 60px;
+        
+    }
+     .home a , .home i{
+        font-size: 20px;
+        color: var(--color-pink) !important;    
+        }
+     .home a:hover , .home i:hover{
+        color: var(--color-gray) !important;    
+    
+    }
+    .details{
+        height: calc(100vh - 210px);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .details .card{
+        height: 300px;
+        padding: 30px;
+        border: none;
+
+    }
+    
+    .details .card h4{
+        font-size: 25px;
+        color: var(--color-pink);
+    }
+    .details .card p{
+        font-size: 18px;
+        letter-spacing: 1px;
+        color: var(--color-black-of);
+    }
+    .details .card span {
+        color: var(--color-black-of);
+        font-size: 20px;
+        font-weight: bold;
+    }
+    .details .card button {
+        background: none;
+        transition: 0.4s;
+        border:none;
+        color: var(--color-pink);
+
+    }
+    .details .card button:hover {
+        border:2px solid var(--color-pink); 
+    }
+   
+    .details .card button i{
+        font-size: 25px;
+        color: var(--color-pink);
+    }
+    
+     .details .card strong{
+        color: var(--color-pink) !important;
+        font-size: 25px !important;
+        font-weight: bold !important;
+        margin-right: 20px;
+    }
+    .details .card img{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 300px;
+        object-fit: cover;
+
+    }
+    @media (max-width:768px) {
+        .details .card img {
+            display: none;
+        }
+    }
+    /* end details */
+
+
+    
+/* start footer */
+.footer{
+    background: #262626;
+    color: var(--color-gray);
+    
+    
+}
+
+.footer .container{
+    padding: 50px 0 0 0;
+}
+.footer h4{
+    color: var(--color-white);
+}
+.footer ul {
+    list-style: none;
+    padding: 0;
+}
+.footer ul li{
+    margin: 10px 0;
+}
+.footer ul li i{
+    margin: 10px;
+    color: var(--color-pink);
+    font-size: 20px;
+}
+
+.footer  input[type="text"]{
+    padding: 10px;
+    min-width: 200px;
+    padding: 10px 12px 10px;
+
+    font-weight: 400;
+    font-size: 13px;
+    font-family: 'Poppins',sans-serif;
+    letter-spacing: 0.6px;
+    border: 0;
+    color: #222;
+    position: relative;
+}
+.footer input[type="submit"]{
+    position: absolute;
+  height: 39.2px;
+    border: 0;
+    font-size: 16px;
+    padding: 0 20px;
+    background: var(--color-pink);
+    color: var(--color-white);
+    border-radius: 0 5px 5px 0;
+}
+@media (min-width:768px) {
+    .footer  input[type="text"]{
+        min-width: 100px;
+        padding: 10px 10px 10px;
+    }
+    .footer input[type="submit"]{
+        padding: 0 5px ;
+        font-size: 12px;
+        font-weight: bold;
+    }
+}
+
+ /* end footer */
